@@ -1,0 +1,933 @@
+:root {
+  --background: #0a0a0a;
+
+  --darkpurple: #4c027a;
+
+  --pinkGradient: linear-gradient(
+      203deg,
+      rgba(107, 52, 52, 0.4) 11.05%,
+      rgba(255, 5, 5, 0.4) 109.6%
+    ),
+    #b718b0;
+
+  --purpleGradientRando: linear-gradient(
+      203deg,
+      rgba(255, 20, 20, 0.4) 11.05%,
+      rgba(143, 0, 255, 0.4) 109.6%
+    ),
+    #4492d9;
+
+  --greenGradient: linear-gradient(
+      203deg,
+      rgba(20, 80, 234, 0.4) 11.05%,
+      rgba(255, 245, 0, 0.4) 109.6%
+    ),
+    #1e9e2d;
+
+  --purpleGradient: linear-gradient(
+      203deg,
+      rgba(224, 59, 59, 0.4) 11.05%,
+      rgba(0, 133, 255, 0.4) 109.6%
+    ),
+    #9818e7;
+
+  --yellowGradient: linear-gradient(
+      203deg,
+      rgba(71, 97, 17, 0.4) 11.05%,
+      rgba(255, 61, 0, 0.4) 109.6%
+    ),
+    #fcff39;
+
+  --redGradient: linear-gradient(
+      203deg,
+      rgba(51, 0, 255, 0.4) 11.05%,
+      rgba(188, 18, 18, 0.4) 109.6%
+    ),
+    #e8110e;
+
+  --whiteGradient: linear-gradient(
+      203deg,
+      rgba(255, 255, 255, 0.4) 11.05%,
+      rgba(201, 201, 201, 0.4) 109.6%
+    ),
+    #fff;
+}
+
+html,
+body {
+  font-family: "Lato";
+  background-color: var(--background);
+  font-size: 16px;
+  color: white;
+  height: 100vh;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;*/
+}
+
+/*styling of the nav*/
+
+nav {
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.loginSignUp {
+  font-size: 18px;
+  color: white;
+}
+.logo {
+  width: 59.396px;
+  height: 63.123px;
+  flex-shrink: 0;
+  padding-bottom: 16px;
+}
+
+.pickHeading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+/*cards at the top of the page*/
+.cardFav {
+  background: var(--pinkGradient);
+}
+.cardRandom {
+  background: var(--purpleGradientRando);
+}
+
+.cardRandom img {
+  width: 55px !important;
+}
+.cardDice {
+  background: var(--greenGradient);
+}
+
+.cardCards {
+  background: var(--yellowGradient);
+}
+
+.cardIndoor {
+  background: var(--redGradient);
+}
+
+.cardOutdoor {
+  background: var(--purpleGradient);
+}
+
+.cardCards img {
+  width: 66px !important;
+}
+
+.pickCards img {
+  width: 40px;
+}
+
+.pickCards {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 32px;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.pickCards h3 {
+  width: 70px;
+  text-align: center;
+}
+.pickContent {
+  display: flex;
+  padding: 0px 16px;
+  align-items: flex-start;
+  gap: 8px;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  justify-content: space-between;
+}
+
+.pickContent::-webkit-scrollbar {
+  display: none;
+}
+
+.smilyFace {
+  width: 33px;
+}
+
+/*styling main cards with games*/
+
+.mainCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--whiteGradient);
+  color: #0a0a0a;
+  font-weight: bold;
+  border-radius: 16px;
+  width: 150px;
+  height: 191px;
+}
+
+.cardSmallDescription {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  width: 150px;
+}
+
+.heartBox {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.players {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.gameImage {
+  border-radius: 16px 16px 0px 0px;
+  height: 137px;
+  width: 150px;
+  align-self: stretch;
+  cursor: pointer;
+}
+
+.allGames {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  justify-items: center;
+}
+.gridContainer {
+  padding: 16px;
+}
+
+.gridContainer2 {
+  padding-left: 16px;
+}
+
+.titleAllGames {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleAllGames input {
+  background: none;
+  border: 1px solid white;
+  border-radius: 16px;
+  height: 40px;
+  padding: 16px;
+  color: white;
+  width: 150px;
+}
+
+.titleAllGames input:focus {
+  color: #0a0a0a;
+  background: rgb(255, 255, 255);
+}
+
+.filters-sorting {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.filters-sorting select {
+  padding: 8px;
+  background: #0a0a0a;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.filters-sorting label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.allGames {
+  height: 650px;
+  width: auto;
+  overflow-x: hidden;
+}
+
+.allGames::-webkit-scrollbar {
+  background-color: #0a0a0a;
+  width: 5px;
+}
+
+.allGames::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+      203deg,
+      rgba(255, 20, 20, 0.332) 11.05%,
+      rgba(144, 0, 255, 0.181) 109.6%
+    ),
+    rgba(68, 145, 217, 0.261);
+  border-radius: 24px;
+}
+
+.newGames {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  justify-content: space-between;
+}
+
+.newGames::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .allGames {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  nav {
+    padding-top: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .formBox input {
+    width: 330px;
+  }
+
+  .gamePage {
+    margin: 0 auto;
+    width: 40%;
+  }
+  .pickContent,
+  .newGames {
+    gap: 16px;
+  }
+
+  nav {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 24px;
+  }
+
+  .titleAllGames {
+    justify-content: unset !important;
+    gap: 24px;
+  }
+  .allGames {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .allGamesSection,
+  .newGamesSection {
+    margin: auto;
+    width: 50%;
+    margin-top: 24px;
+    overflow-y: auto;
+  }
+
+  .pickChoose {
+    margin: auto;
+    width: 50%;
+  }
+}
+
+.seeMore {
+  border: 1px solid #c1c1c1;
+  border-radius: 16px;
+  display: flex;
+  width: 137px;
+  height: 179px;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  color: #c1c1c1;
+}
+
+.seeMore img {
+  width: 40px;
+}
+
+.filters-sorting {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.dropdown {
+  z-index: 100;
+  position: absolute;
+  background: #0a0a0a;
+  color: white;
+  padding: 16px 16px;
+  border: 1px solid white;
+}
+
+.dropdown input {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background: #0a0a0a;
+  border: 1px solid pink;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.gamePage {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageGameBox img {
+  width: 100%;
+}
+
+.iconBox {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.iconBox img {
+  width: 24px;
+  height: 24px;
+}
+
+.people img {
+  width: 32px;
+}
+.iconsBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-bottom: 40px;
+}
+
+.iconsBox p {
+  margin: 0;
+}
+
+.underImage {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+}
+.ruresDropdown h2 {
+  background: var(--greenGradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.ruresDropdown {
+  border-bottom: 1px solid #1e9e2d;
+}
+.rulesBox h2 {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.rulesBox p {
+  margin: 0;
+  line-height: 24px;
+}
+
+.rulesContentBox {
+  margin-bottom: 56px;
+}
+
+.titleUnder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shareHeart {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.signInUpBox {
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.formBox input {
+  border-radius: 10px;
+  background: white;
+  padding: 8px 16px;
+  color: #0a0a0a;
+  margin-bottom: 24px;
+  width: 230px;
+}
+
+.formBox button {
+  border-radius: 10px;
+  background: var(--greenGradient);
+  padding: 8px 32px;
+  max-width: 230px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.formBox button:hover {
+  background: var(--yellowGradient);
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signInUpBox p {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.signInUpBox a {
+  color: #1e9e2d;
+}
+
+.formBox h1 {
+  margin-bottom: 24px;
+}
+
+.gray-button {
+  border: 1px solid gray !important;
+  background: none !important;
+  color: grey !important;
+}
+.profileLoged {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.userNameNav {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.profile {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.userImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userImage img {
+  width: -webkit-fill-available;
+  height: auto;
+}
+
+.editDelete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.edit {
+  border-radius: 10px;
+  background: var(--greenGradient);
+  padding: 8px 32px;
+  width: 230px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.delete,
+.byebye {
+  border-radius: 10px;
+  border: 1px solid rgb(149, 10, 10) !important;
+  padding: 8px 32px;
+  width: 230px;
+  cursor: pointer;
+  font-size: 18px;
+  color: rgb(149, 10, 10) !important;
+  transition: 0.3s ease-in-out;
+  background: none !important;
+}
+
+.edit:hover {
+  background: var(--yellowGradient);
+}
+
+.delete:hover,
+.byebye:hover {
+  background: var(--redGradient) !important;
+  color: #fff !important;
+}
+
+.createForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.createForm button,
+.createGameButton button {
+  border-radius: 10px;
+  background: var(--greenGradient);
+  padding: 8px 32px;
+  width: 230px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 40px;
+}
+
+.createForm button:hover,
+.createGameButton button:hover {
+  background: var(--purpleGradient);
+}
+
+.createForm input {
+  border-radius: 10px;
+  background: white;
+  padding: 8px 16px;
+  color: #0a0a0a;
+  width: 230px;
+  height: fit-content;
+}
+
+.cellForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.addNewGame {
+  margin: auto;
+  width: 50%;
+}
+
+.addNewGame h1 {
+  text-align: center;
+}
+
+#top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.heading {
+  font-weight: 900;
+  color: white;
+  margin: 0;
+  font-size: 26px;
+}
+.subheading {
+  background: var(--purpleGradientRando);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  grid-row: 1;
+  grid-column: 1;
+}
+.spinwheel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wheel {
+  transition: all 4s cubic-bezier(0, 0.57, 0.61, 0.99);
+}
+#buttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#button {
+  width: 20%;
+  height: 50px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 100;
+}
+@media only screen and (max-width: 1000px) {
+  #button {
+    width: 50%;
+  }
+}
+.spinner {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  border-width: 0px;
+  font-size: 18px;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  background: var(--purpleGradientRando);
+}
+#tagsheading {
+  font-size: 18px;
+  text-align: left;
+}
+.spinner:hover {
+  cursor: pointer;
+}
+.balloons {
+  width: 20px;
+  height: 20px;
+}
+.indicator {
+  position: absolute;
+  z-index: 1;
+}
+.spinImage {
+  width: 100%;
+  height: 250px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.randomgamepop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.popups {
+  height: 100%;
+  width: 100%;
+  grid-row: 1;
+  grid-column: 1;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.popup {
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.popupcontent {
+  margin: auto;
+  background-color: #0a0a0a;
+  border-radius: 20px;
+  position: relative;
+  padding: 0;
+  height: 450px;
+  width: 400px;
+}
+.popupcontainer {
+  margin: 0;
+  color: white;
+  font-family: "Lato", sans-serif;
+  height: 100%;
+}
+.modaltext {
+  padding: 20px;
+}
+.row1 {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.gamename {
+  margin: 0;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.row2 {
+  display: inline-flex;
+  flex-direction: row;
+  width: 90%;
+  gap: 50px;
+  align-items: center;
+}
+.row3 {
+  display: inline-flex;
+  flex-direction: row;
+  width: 90%;
+  gap: 5px;
+  align-items: center;
+  margin-top: 5px;
+}
+.row4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+.row5 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.seemoreMR {
+  background: var(--purpleGradientRando);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  color: white;
+  width: 60%;
+  height: 40px;
+  cursor: pointer;
+}
+.wholewheel {
+  display: grid;
+}
+.tagscontainer {
+  height: 300px;
+  column-gap: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (min-width: 1001px) {
+  .tagscontainer {
+    width: 400px;
+  }
+}
+.wheeltags {
+  width: 156px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: var(--purpleGradientRando);
+  cursor: pointer;
+  border-radius: 12px;
+}
+.wheeltagsinside {
+  background-color: var(--background);
+  width: 150px;
+  height: 32px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.wheeltagsinside input[type="checkbox"] {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.wheeltagsinside.selected {
+  background-color: var(--purpleGradientRando);
+}
+#aesthetics {
+  width: 13px;
+  height: 13px;
+}
