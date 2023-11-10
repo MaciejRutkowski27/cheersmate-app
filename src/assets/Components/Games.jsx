@@ -85,7 +85,10 @@ export default function Games() {
       <section className="filters-sorting">
         <div>
           <div className="filter" onClick={handleDorpdown}>
-            <img src="src\assets\Icons\fi-rr-filter.svg" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/fi-rr-filter.svg?alt=media&token=9f88536c-f97f-4fa8-8a1a-f7fef38f3bd0"
+              alt=""
+            />
             <h3>Filter</h3>
           </div>
           <div
@@ -106,7 +109,10 @@ export default function Games() {
           </div>
         </div>
         <label>
-          <img src="src\assets\Icons\sortingArrows.svg" alt="" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/sortingArrows.svg?alt=media&token=2ca7e13f-8cac-4b61-9b36-13b4f0e8f955"
+            alt=""
+          />
           <select onChange={(e) => setSortBy(e.target.value)}>
             <option value="createdAt">Newest</option>
             <option value="name">Name</option>

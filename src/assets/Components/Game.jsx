@@ -57,8 +57,8 @@ export default function Game() {
   }, [localStorageKey]);
 
   const heartIconSrc = isLiked
-    ? "/src/assets/Icons/blackIcons/png/heartcoloredFull.png"
-    : "/src/assets/Icons/blackIcons/png/WhiteHeart.png";
+    ? "https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/heartcoloredFull.png?alt=media&token=a3a45415-94d9-4e5b-b463-7ff5739b3e26"
+    : "https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/WhiteHeart.png?alt=media&token=38814319-12eb-418f-af18-58a06382d83e";
 
   return (
     <article className="gamePage" key={game}>
@@ -69,7 +69,10 @@ export default function Game() {
         <div className="titleUnder">
           <h1>{name}</h1>
           <div className="shareHeart">
-            <img src="/src/assets/Icons/fi-rr-share.svg" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/fi-rr-share.svg?alt=media&token=8728d2d3-2dd1-49ec-a851-129f17d01e22"
+              alt=""
+            />
             <img
               className="heartIconMain"
               src={heartIconSrc}
@@ -79,15 +82,24 @@ export default function Game() {
         </div>
         <div className="iconsBox">
           <div className="iconBox people">
-            <img src="/src/assets/Icons/people.svg" alt="time" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/people.svg?alt=media&token=238731b5-7f1d-4cd5-8738-3aa42814541c"
+              alt="time"
+            />
             <p>{people}</p>
           </div>
           <div className="iconBox">
-            <img src="/src/assets/Icons/hourglass.svg" alt="time" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/hourglass.svg?alt=media&token=f136906c-6d68-407d-b182-63b1bf72ecdb"
+              alt="time"
+            />
             <p>{time}</p>
           </div>
           <div className="iconBox">
-            <img src="/src/assets/Icons/bowling.svg" alt="time" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/bowling.svg?alt=media&token=36d81ed9-1d70-4b31-9ca1-0bfe6413ceb6"
+              alt="time"
+            />
             <p>{equipment}</p>
           </div>
         </div>

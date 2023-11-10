@@ -23,12 +23,20 @@ export default function NavLoged() {
   return (
     <nav>
       <NavLink to="/">
-        <img className="logo" src="/src/assets/Icons/Logo.svg" alt="" />
+        <img
+          className="logo"
+          src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/Logo.svg?alt=media&token=81cdac67-e9ce-40fd-84cd-d5c1dcffb50a"
+          alt=""
+        />
       </NavLink>
       <NavLink to="/profile">
         <div className="profileLoged">
           <p className="userNameNav">{name}</p>
-          <img className="userProfile" src="/src/assets/Icons/☺.svg" alt="" />
+          <img
+            className="userProfile"
+            src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/%E2%98%BA.svg?alt=media&token=3d7a86b9-6440-4574-b0ec-736fefab5bcc"
+            alt=""
+          />
         </div>
       </NavLink>
     </nav>

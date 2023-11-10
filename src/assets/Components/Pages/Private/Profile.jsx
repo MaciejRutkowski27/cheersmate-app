@@ -78,7 +78,10 @@ export default function Profile() {
     <section className="profile">
       <div className="user">
         <div className="userImage">
-          <img src="/src/assets/Icons/☺.svg" alt="" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/%E2%98%BA.svg?alt=media&token=3d7a86b9-6440-4574-b0ec-736fefab5bcc"
+            alt=""
+          />
         </div>
         <h1>@{name}</h1>
       </div>

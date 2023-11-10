@@ -22,8 +22,8 @@ export default function GameCard({ game }) {
   }, [localStorageKey]);
 
   const heartIconSrc = isLiked
-    ? "/src/assets/Icons/blackIcons/png/heartcoloredFull.png"
-    : "/src/assets/Icons/blackIcons/png/heartblackEmpty.png";
+    ? "https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/heartcoloredFull.png?alt=media&token=a3a45415-94d9-4e5b-b463-7ff5739b3e26"
+    : "https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/heartblackEmpty.png?alt=media&token=66ef646e-88fa-41df-8824-90054e328285";
   return (
     <article className="mainCard" key={game.id}>
       <img
@@ -34,7 +34,10 @@ export default function GameCard({ game }) {
       />
       <div className="cardSmallDescription">
         <div className="players">
-          <img src="src\assets\Icons\blackIcons\playersIcon.png" alt="" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/playersIcon.png?alt=media&token=2f69e22c-fcd1-4aeb-9a32-0cdd3ed5272b"
+            alt=""
+          />
           {game.people}
         </div>
         <div className="heartBox">

@@ -21,8 +21,8 @@ export default function SpinResult({ game }) {
   }, [localStorageKey]);
 
   const heartIconSrc = isLiked
-    ? "/src/assets/Icons/blackIcons/png/heartcoloredFull.png"
-    : "/src/assets/Icons/heart.svg";
+    ? "https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/heartcoloredFull.png?alt=media&token=a3a45415-94d9-4e5b-b463-7ff5739b3e26"
+    : "https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/heart.svg?alt=media&token=4f97288c-f486-429c-ad00-0bda023a954b";
 
   return (
     <article className="popupcontent">
@@ -31,7 +31,10 @@ export default function SpinResult({ game }) {
         <div className="row1">
           <h2 className="gamename">{game.name}</h2>
           <span className="icons">
-            <img src="/src/assets/Icons/fi-rr-share.svg" alt="time" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/fi-rr-share.svg?alt=media&token=8728d2d3-2dd1-49ec-a851-129f17d01e22"
+              alt="time"
+            />
             <div className="heartBox">
               <img
                 className="heartIconMain"
@@ -45,12 +48,15 @@ export default function SpinResult({ game }) {
         <br />
         <div className="row2">
           <span className="icons">
-            <img src="/src/assets/Icons/people.svg" alt="time" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/people.svg?alt=media&token=238731b5-7f1d-4cd5-8738-3aa42814541c"
+              alt="time"
+            />
             <h3 className="gamename">{game.people}</h3>
           </span>
           <span className="icons">
             <img
-              src="/src/assets/Icons/hourglass.svg"
+              src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/hourglass.svg?alt=media&token=f136906c-6d68-407d-b182-63b1bf72ecdb"
               alt="time"
             />
             <h3 className="gamename">{game.time}</h3>
@@ -59,7 +65,10 @@ export default function SpinResult({ game }) {
         <br />
         <div className="row3">
           <span className="icons">
-            <img src="/src/assets/Icons/bowling.svg" alt="time" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/bowling.svg?alt=media&token=36d81ed9-1d70-4b31-9ca1-0bfe6413ceb6"
+              alt="time"
+            />
             <h3 className="gamename">{game.equipment}</h3>
           </span>
         </div>

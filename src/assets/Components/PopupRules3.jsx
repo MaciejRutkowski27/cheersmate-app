@@ -27,6 +27,7 @@ export default function PopupRules3() {
   const specificGame = gamesRules.find((game) => game.id === specificGameId);
 
   return (
+    <section>
     <div className="popupcontent">
       <div className="popupcontainer">
         {specificGame && (
@@ -38,7 +39,7 @@ export default function PopupRules3() {
             >
               See Rules
               <img
-                src="/src/assets/Icons/fi-rr-angle-small-right.svg"
+                src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/fi-rr-angle-small-right.svg?alt=media&token=563f6fb0-d569-43d3-bb2e-6d6740a3e914"
                 alt="arrow"
               />
             </button>
@@ -46,5 +47,6 @@ export default function PopupRules3() {
         )}
       </div>
     </div>
+    </section>
   );
 }

@@ -43,7 +43,10 @@ export default function NewGames() {
           <GameCard game={game} key={game.id} />
         ))}
         <div className="seeMore">
-          <img src="src\assets\Icons\eyeIcon.svg" alt="" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/eyeIcon.svg?alt=media&token=dab72fa3-01a4-4024-b13a-0ee20c1a2cf2"
+            alt=""
+          />
           <h3>See More</h3>
         </div>
       </section>
