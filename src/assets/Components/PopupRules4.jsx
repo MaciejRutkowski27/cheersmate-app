@@ -22,7 +22,7 @@ export default function PopupRules4() {
     getGames();
   }, []);
   const gamesRules = [...games];
-  const specificGameId = "flunkyBall"; // Specify the ID you want to display
+  const specificGameId = "flunkyBall"; 
 
   const specificGame = gamesRules.find((game) => game.id === specificGameId);
 
