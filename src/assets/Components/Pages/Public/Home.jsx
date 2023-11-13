@@ -3,7 +3,6 @@ import { useNavigate } from "react-router";
 import Games from "../../Games";
 import NewGames from "../../newGames";
 
-
 export default function Home() {
   const navigate = useNavigate();
   return (
@@ -24,7 +23,10 @@ export default function Home() {
             <h3>Favorite</h3>
           </div>
           <a href="/spin">
-            <div className="cardRandom pickCards">
+            <div
+              className="cardRandom pickCards"
+              onClick={() => navigate("/gamepopup")}
+            >
               <img src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/randomIcon.svg?alt=media&token=b90f0380-8e8d-4683-91cc-68fe3df2096a" />
               <h3>Random</h3>
             </div>

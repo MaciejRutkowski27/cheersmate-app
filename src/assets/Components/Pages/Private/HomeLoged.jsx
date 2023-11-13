@@ -22,12 +22,12 @@ export default function HomeLoged() {
             <img src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/heart.svg?alt=media&token=4f97288c-f486-429c-ad00-0bda023a954b" />
             <h3>Favorite</h3>
           </div>
-          <a href="/spin">
-            <div className="cardRandom pickCards">
+          
+            <div className="cardRandom pickCards" onClick={() => navigate("/gamepopup")}>
               <img src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/randomIcon.svg?alt=media&token=b90f0380-8e8d-4683-91cc-68fe3df2096a" />
               <h3>Random</h3>
             </div>
-          </a>
+          
           <div className="cardDice pickCards">
             <img src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/diceIcon.svg?alt=media&token=0adbe033-881d-4135-9e99-40b2edb7a640" />
             <h3>Dices</h3>
