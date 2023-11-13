@@ -23,7 +23,7 @@ export default function HomeLoged() {
             <h3>Favorite</h3>
           </div>
           
-            <div className="cardRandom pickCards" onClick={() => navigate("/gamepopup")}>
+            <div className="cardRandom pickCards" onClick={() => navigate("/spin")}>
               <img src="https://firebasestorage.googleapis.com/v0/b/webapp-exam-f3829.appspot.com/o/randomIcon.svg?alt=media&token=b90f0380-8e8d-4683-91cc-68fe3df2096a" />
               <h3>Random</h3>
             </div>
